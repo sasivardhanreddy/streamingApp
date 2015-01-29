@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawing_question"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:padding="0dp"
+    android:orientation="vertical">
+
+    <com.hack40.streamhanddrawingappserver.DrawingView
+        android:id="@+id/drawing"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </com.hack40.streamhanddrawingappserver.DrawingView>
+
+    <RelativeLayout
+        android:id="@+id/drawingView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/pannel"
+        android:padding="5dp">
+
+        <ImageButton
+            android:id="@+id/btnClear"
+            android:layout_width="115dp"
+            android:layout_height="44dp"
+            android:src="@drawable/ic_action_discard"
+            android:background="#000000"
+            android:padding="5dp" />
+
+        <ImageButton
+            android:id="@+id/btnSave"
+            android:layout_width="115dp"
+            android:layout_height="44dp"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/btnClear"
+            android:src="@drawable/ic_action_save"
+            android:background="#000000"
+            />
+
+        <ImageButton
+            android:id="@+id/btnShare"
+            android:layout_width="115dp"
+            android:layout_height="44dp"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/btnSave"
+            android:src="@drawable/ic_action_share"
+            android:background="#000000"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>
+
